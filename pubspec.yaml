@@ -30,13 +30,6 @@ dependencies:
 
   firebase_core: ^1.4.0
   cloud_firestore: ^2.4.0
-  json_serializable: ^4.1.4
-  targets:
-    $default:
-      builders:
-        json_serializable:
-          options:
-            any_map: true
 
 dev_dependencies:
   flutter_test:
