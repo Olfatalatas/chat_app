@@ -1,6 +1,5 @@
 import 'package:chat_app/model/user.dart';
 import 'package:chat_app/page/chat_page.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ChatHeaderWidget extends StatelessWidget {
@@ -55,9 +54,8 @@ class ChatHeaderWidget extends StatelessWidget {
                           ));
                         },
                         child: CircleAvatar(
-                          radius: 24,
-                          backgroundImage: NetworkImage(user.urlAvatar),
-                        ),
+                            radius: 24,
+                            backgroundImage: NetworkImage(user.urlAvatar)),
                       ),
                     );
                   }

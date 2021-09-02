@@ -16,7 +16,7 @@ class MessagesWidget extends StatelessWidget {
         builder: (context, snapshot) {
           final messages = snapshot.data;
 
-          return messages.isEmpty
+          return messages?.isEmpty ?? true
               ? buildText('Say Hi')
               : ListView.builder(
                   physics: BouncingScrollPhysics(),
