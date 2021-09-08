@@ -26,7 +26,9 @@ class FirebaseApi {
     await refMessages.add(newMessage.toJson());
 
     final refUsers = FirebaseFirestore.instance.collection('users');
-    await refUsers.doc(idUser).set({UserField.lastMessageTime: DateTime.now()});
+    await refUsers
+        .doc(idUser)
+        .update({UserField.lastMessageTime: DateTime.now()});
   }
 
   static Stream<List<Message>> getMessages(String idUser) =>
